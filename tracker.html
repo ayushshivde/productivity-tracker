@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity tracker</title>
+   <link rel="stylesheet" href="tracker.css">
+
+</head>
+<body class="bg-[#EDF1F2] h-screen w-full flex justify-center items-center p-15 relative ">
+<div class="container bg-[#FFFFFF] w-xl h-fit p-8 rounded-lg  shadow-lg">
+
+    <div class="w-full h-10  flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4AA4DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target h-6 w-6 text-primary"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg> 
+         <h1 class="text-3xl font-bold ml-2 ">Set Your Challenge</h1></div>
+    <p class="opacity-50 ">Define your goal and the duration of your grind.</p>
+<form action="">
+
+
+    <div class="flex items-center  mt-6 font-medium">   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target h-6 w-6 text-primary"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg> 
+        <label for="name" class="block p-2 ">Challenge Name
+        </label> </div>
+     
+        <input type="text" required ="" id="name" placeholder="e.g., Learn React in 30 Days" class=" ChallengeName w-full h-12 bg-[#EDF1F2]  rounded-lg p-2">
+    
+    
+    
+        <div class="flex items-center  mt-6 font-medium">   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days h-4 w-4"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+            <label for="days" class="block p-2 ">Number of Days
+            </label> </div>
+         
+            <input type="number"   required ="" id="days" placeholder="30" class=" NumberOfDays w-full h-12 bg-[#EDF1F2]  rounded-lg p-2">
+    
+    <button type="submit" class="btn w-full h-12 bg-[#3398DB] hover:bg-[#4AA4DF] text-white rounded-lg mt-6">Start Challenge</button>
+
+
+
+
+
+
+</form>
+
+</div>
+
+
+
+<!-- grid page -->
+ <div class="whiteContainer rounded-lg w-3/4 h-100 bg-[#FFFFFF] ">
+    <h1 class="text-center m-3 text-3xl font-bold ">days</h1>
+    <div class="boxContainer">
+        
+    <!-- <div class="box">
+        <h1>Day 1</h1>
+     <p>_</p>
+    </div> -->
+   
+      </div>
+      
+
+      
+      
+    </div>
+
+
+
+
+
+    <!-- <div class="percentageSetterBox w-65  h-55 bg-white p-3 rounded-lg  flex flex-col gap-4 shadow-lg"> 
+        <div>
+            <h1 class=" text-lg  opacity-80">Day 1 Progress</h1>
+            <p class="opacity-50 text-sm ">Set your completion percentage.</p>
+        </div>
+        
+        <div>
+            <label for="percentageInput" class=" opacity-80">% Percentage</label>
+            box.style.backgroundColor="#EF4343"
+        </div>
+        
+        <div class=" pt-3 pb-3 flex items-baseline justify-between">
+            <input type="range" min="0" max="100" value="30" class="w-25 h-4 " oninput="updatePercentage(this.value)">
+            <button class="hover:bg-[#E88538] hover:text-white  text-black  p-2  rounded-md">Cancel</button>
+            <button class="bg-[#E88538] p-2   text-white rounded-md">Save</button>
+        </div>
+
+
+    </div> -->
+
+
+<script src="grid.js">
+
+</script>
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+</body>
+</html>
