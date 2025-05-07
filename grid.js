@@ -3,6 +3,10 @@ let container = document.querySelector(".container")
 let whiteContainer = document.querySelector(".whiteContainer")
 let heading = document.querySelector(".whiteContainer h1")
 let boxContainer = document.querySelector(".boxContainer")
+let cancelChallenge;
+
+
+
 
 let NumberOfDays;
 let ChallengeName;
@@ -32,7 +36,7 @@ function loadgrid(){
     //hide the set challenge container and make whitecontainer(grid container) visible
  container.classList.add("hidden")
  whiteContainer.style.display = "flex"
-
+ 
 
 //dynamically change heading and create a number of box based on days input
 heading.innerHTML = ChallengeName;
@@ -66,6 +70,23 @@ AllDivBoxes.forEach((box)=>{
        showDialogBox(id , boxCordinate )
        
     })
+})
+
+
+// create cancelchallenge btn and append it into body
+ cancelChallenge = document.createElement("button");
+cancelChallenge.classList.add(
+  "cancelChallenge", "absolute",  "top-10", "left-10",
+  "hover:bg-[#E88538]", "hover:text-white", "font-medium",
+  "text-black", "text-lg", "p-2", "rounded-lg", "border-black", 
+  "border-slate-700",
+  "z-50"
+);
+cancelChallenge.innerHTML = "Cancel Challenge";
+document.body.appendChild(cancelChallenge);
+
+cancelChallenge.addEventListener("click" , ()=>{
+    cancelChallengeBtnWorking()
 })
 
 
@@ -191,3 +212,10 @@ if(val>=70 && val<=100) box.style.backgroundColor="#21C45D"
 }
 
 
+function cancelChallengeBtnWorking(){
+ whiteContainer.style.display = "none"
+ container.classList.remove("hidden")
+ boxContainer.innerHTML="" //andar ke sare box remove kar doo
+ cancelChallenge.remove()
+
+}
